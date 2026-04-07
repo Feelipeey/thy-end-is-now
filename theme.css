@@ -1,81 +1,40 @@
-/**
- * @name funi oneshot theme
- * @author Feelipeey 
- * @version 1.0
- * @description funi oneshot theme
- */
+{
+  "name": "Oneshot theme",
+  "description": "Oneshot theme",
+  "authors": [
+    {
+      "name": "Feelipeey",
+      "id": "0"
+    }
+  ],
+  "semanticColors": {
+    "BACKGROUND_PRIMARY": ["#140a1e"],
+    "BACKGROUND_SECONDARY": ["#1e0f2d"],
+    "BACKGROUND_TERTIARY": ["#0a0514"],
+    "BACKGROUND_ACCENT": ["#1e0f2d"],
 
-:root {
-  --bg-overlay: rgba(20, 10, 30, 0.75);
-  --bg-secondary: rgba(30, 15, 45, 0.85);
-  --accent: #ff7ac6;
-  --accent-soft: #c084fc;
-  --text-main: #f5eaff;
-  --text-muted: #b8a9cc;
-}
+    "TEXT_NORMAL": ["#f5eaff"],
+    "TEXT_MUTED": ["#b8a9cc"],
+    "TEXT_LINK": ["#ff7ac6"],
 
-/* Background image */
-.appMount-2yBXZl {
-  background: url("https://i.imgur.com/CXCNXZu.jpeg") center/cover no-repeat !important;
-}
+    "INTERACTIVE_NORMAL": ["#ff7ac6"],
+    "INTERACTIVE_HOVER": ["#c084fc"],
+    "INTERACTIVE_ACTIVE": ["#ff7ac6"],
 
-/* Dark overlay for readability */
-.appMount-2yBXZl::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(40, 10, 60, 0.6),
-    rgba(10, 5, 20, 0.9)
-  );
-  z-index: -1;
-}
-
-/* Chat area */
-.chat-2ZfjoI {
-  background: var(--bg-overlay) !important;
-}
-
-/* Sidebar */
-.sidebar-1tnWFu {
-  background: var(--bg-secondary) !important;
-}
-
-/* Channels list */
-.container-1NXEtd {
-  background: transparent !important;
-}
-
-/* Text */
-.messageContent-2qWWxC {
-  color: var(--text-main) !important;
-}
-
-/* Muted text */
-.colorStandard-21JIj7,
-.colorMuted-12r0aO {
-  color: var(--text-muted) !important;
-}
-
-/* Accent color */
-:root {
-  --brand-experiment: #ff7ac6;
-}
-
-/* Selected channel */
-.modeSelected-3DmyhH {
-  background: rgba(255, 122, 198, 0.2) !important;
-  border-left: 3px solid var(--accent);
-}
-
-/* Hover effect */
-.modeDefault-2fEh7a:hover {
-  background: rgba(192, 132, 252, 0.15) !important;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar-thumb {
-  background: #c084fc !important;
-  border-radius: 10px;
+    "SCROLLBAR_THIN_THUMB": ["#c084fc"],
+    "SCROLLBAR_THIN_TRACK": ["#0a0514"]
+  },
+  "rawColors": {
+    "BRAND_500": "#ff7ac6",
+    "PRIMARY_600": "#140a1e",
+    "PRIMARY_700": "#0a0514"
+  },
+  "background": {
+    "url": "https://i.imgur.com/CXCNXZu.jpeg",
+    "blur": 0.3,
+    "alpha": 0.4,
+    "size": "cover",
+    "position": "center"
+  },
+  "spec": 2
 }
